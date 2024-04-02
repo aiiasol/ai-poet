@@ -15,12 +15,9 @@ if st.button('시 작성 요청하기'):
         st.write(result)
 
 
-# Advertisement JavaScript
-advertisement_script = """
-<script src="https://ads-partners.coupang.com/g.js"></script>
-<script>
-    new PartnersCoupang.G({"id":769781,"template":"carousel","trackingCode":"AF7086871","width":"680","height":"140","tsource":""});
-</script>
+# Advertisement iframe
+advertisement_iframe = """
+<iframe src="https://ads-partners.coupang.com/widgets.html?id=769781&template=carousel&trackingCode=AF7086871&subId=&width=680&height=140&tsource=" width="680" height="140" frameborder="0" scrolling="no" referrerpolicy="unsafe-url" browsingtopics></iframe>
 """
 
-st.write(advertisement_script, unsafe_allow_html=True)
+st.markdown(advertisement_iframe, unsafe_allow_html=True)
