@@ -13,7 +13,10 @@ if st.button('시 작성 요청하기'):
     with st.spinner('시 작성 중...'):
         result = llm.predict(content + "에 대한 시를 써줘")
         st.write(result)
-
+print()
+print()
+print()
+print()
 
 # Advertisement iframe
 advertisement_iframe = """
