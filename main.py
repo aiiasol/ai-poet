@@ -24,3 +24,26 @@ advertisement_iframe = """
 """
 
 st.markdown(advertisement_iframe, unsafe_allow_html=True)
+
+
+
+
+    public Renderer renderer;
+	public HSVPicker picker;
+     
+	// Use this for initialization
+	void Start ()
+	{
+		picker.onValueChanged.AddListener(color =>
+		{
+			renderer.material.color = color;
+		});
+	}
+ 
+	// Update is called once per frame
+	void Update () {
+ 
+	}
+
+    Color color = Color.green;
+    picker.AssignColor(color);
